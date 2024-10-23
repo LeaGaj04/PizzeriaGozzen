@@ -1,45 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: #F2F2F2; /* Fondo claro */
+    color: #333; /* Texto oscuro para buena legibilidad */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
 }
 
 header {
-    background-color: #ff6347;
-    padding: 1em;
-    text-align: center;
-    color: white;
+    background-color: #D9534F; /* Encabezado en rojo vibrante */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado */
+    text-align: center; /* Centrar texto */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1em;
-}
-
-.pizza-list {
-    display: flex;
-    justify-content: space-around;
-}
-
-.pizza-item {
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    text-align: center;
+h1, h2, h3 {
+    color: #D9534F; /* Encabezados en rojo vibrante */
 }
 
 button {
-    background-color: #ff6347;
+    background-color: #5BC0DE; /* Botón azul claro */
     color: white;
-    padding: 0.5em 1em;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
 }
 
 button:hover {
-    background-color: #e5533d;
+    background-color: #D9534F; /* Color al pasar el mouse */
+}
+
+.card {
+    background-color: white; /* Fondo blanco para las tarjetas */
+    border: 1px solid #E6E6E6; /* Borde sutil */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.2s; /* Transición suave */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+.footer {
+    background-color: #5CB85C; /* Fondo verde para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Posición relativa */
+    bottom: 0; /* Al fondo de la página */
+    width: 100%; /* Ancho completo */
 }

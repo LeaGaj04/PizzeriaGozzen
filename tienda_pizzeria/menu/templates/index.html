@@ -6,46 +6,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Web de Pizzas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header>
-        <h1>Pizzas Deliciosas</h1>
+    <header class="bg-danger text-white text-center py-4">
+        <h1 class="text-white">Pizza Gozzen</h1>
         <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="container my-5">
         <section id="menu">
-            <h2>Nuestro Menú</h2>
-            <div class="pizza-list">
-                <div class="pizza-item">
-                    <h3>Pizza Margarita</h3>
-                    <p>Tomate, mozzarella, albahaca</p>
-                    <button onclick="agregarCarrito('Pizza Margarita')">Agregar al carrito</button>
+            <h2 class="text-center mb-4">Nuestro Menú</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pizza Margarita</h3>
+                            <p class="card-text">Tomate, mozzarella, albahaca</p>
+                            <button class="btn btn-danger" onclick="agregarCarrito('Pizza Margarita')">Agregar al carrito</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="pizza-item">
-                    <h3>Pizza Pepperoni</h3>
-                    <p>Pepperoni, mozzarella</p>
-                    <button onclick="agregarCarrito('Pizza Pepperoni')">Agregar al carrito</button>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pizza Pepperoni</h3>
+                            <p class="card-text">Pepperoni, mozzarella</p>
+                            <button class="btn btn-danger" onclick="agregarCarrito('Pizza Pepperoni')">Agregar al carrito</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="carrito">
-            <h2>Tu Carrito</h2>
-            <ul id="lista-carrito"></ul>
+        <section id="carrito" class="mt-5">
+            <h2 class="text-center">Tu Carrito</h2>
+            <ul id="lista-carrito" class="list-group"></ul>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Pizzería Gozzen. Todos los derechos reservados.</p>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>
