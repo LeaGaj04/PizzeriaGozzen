@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web de Pizzas</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Pizzas Deliciosas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Nuestro Menú</h2>
+            <div class="pizza-list">
+                <div class="pizza-item">
+                    <h3>Pizza Margarita</h3>
+                    <p>Tomate, mozzarella, albahaca</p>
+                    <button onclick="agregarCarrito('Pizza Margarita')">Agregar al carrito</button>
+                </div>
+                <div class="pizza-item">
+                    <h3>Pizza Pepperoni</h3>
+                    <p>Pepperoni, mozzarella</p>
+                    <button onclick="agregarCarrito('Pizza Pepperoni')">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+        <section id="carrito">
+            <h2>Tu Carrito</h2>
+            <ul id="lista-carrito"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pizzería Gozzen. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
