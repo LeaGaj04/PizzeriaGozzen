@@ -53,3 +53,15 @@ button:hover {
     bottom: 0; /* Al fondo de la página */
     width: 100%; /* Ancho completo */
 }
+#lista-carrito .list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+#lista-carrito .list-group-item .cantidad {
+    font-weight: bold;
+    color: #D9534F; /* Rojo vibrante para la cantidad */
+}
