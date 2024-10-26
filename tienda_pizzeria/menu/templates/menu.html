@@ -24,7 +24,7 @@
                     <a class="nav-link text-white" href="{% url 'login' %}">Iniciar Sesión</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Ubicacion</a>
+                    <a class="nav-link text-white" href="{% url 'ubicacion' %}">Ubicación</a>
                 </li>
             </ul>
         </nav>
@@ -96,13 +96,13 @@
 
     <main class="container my-5">
         <section id="menu">
-            <h2 class="text-center mb-4">Bebestibles</h2>
+            <h2 class="text-center mb-4">Bebidas</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Margarita</h3>
-                            <p class="card-text">Tomate, mozzarella, albahaca</p>
+                            <h3 class="card-title">Coca-Cola</h3>
+                            <p class="card-text">Tomate</p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Margarita')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -110,8 +110,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Pepperoni</h3>
-                            <p class="card-text">Pepperoni, mozzarella</p>
+                            <h3 class="card-title">Pepsi</h3>
+                            <p class="card-text">Tomate</p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Pepperoni')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -119,8 +119,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza 3 Quesos</h3>
-                            <p class="card-text">Tomate, mozzarella, Queso, Queso, Queso</p>
+                            <h3 class="card-title">Pepsi-Zero</h3>
+                            <p class="card-text">Tomate</p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza 3 Quesos')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -128,8 +128,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Todas Las Carnes</h3>
-                            <p class="card-text">Tomate, mozzarella, Salame, pollo, carne, Tocino</p>
+                            <h3 class="card-title">Sprite</h3>
+                            <p class="card-text">Tomate</p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Todas Las Carnes')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -137,8 +137,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Primavera</h3>
-                            <p class="card-text">Tomate, mozzarella, Cebolla, Champiñon, palmito, Pimenton</p>
+                            <h3 class="card-title">Fanta</h3>
+                            <p class="card-text">Tomate</p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Primavera')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -146,8 +146,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Gozzen</h3>
-                            <p class="card-text">Tomate, mozzarella, Pollo, Tocino, Choclo</p>
+                            <h3 class="card-title">Jugos</h3>
+                            <p class="card-text">Tomate</p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Gozzen')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -165,8 +165,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Margarita</h3>
-                            <p class="card-text">Tomate, mozzarella, albahaca</p>
+                            <h3 class="card-title">Palitos de Ajo</h3>
+                            <p class="card-text"></p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Margarita')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -174,8 +174,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Pepperoni</h3>
-                            <p class="card-text">Pepperoni, mozzarella</p>
+                            <h3 class="card-title">Palitos de Queso</h3>
+                            <p class="card-text"></p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Pepperoni')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -183,8 +183,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza 3 Quesos</h3>
-                            <p class="card-text">Tomate, mozzarella, Queso, Queso, Queso</p>
+                            <h3 class="card-title">Rolls de Queso</h3>
+                            <p class="card-text"></p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza 3 Quesos')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -192,8 +192,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Todas Las Carnes</h3>
-                            <p class="card-text">Tomate, mozzarella, Salame, pollo, carne, Tocino</p>
+                            <h3 class="card-title">Canape</h3>
+                            <p class="card-text"></p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Todas Las Carnes')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -201,8 +201,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Primavera</h3>
-                            <p class="card-text">Tomate, mozzarella, Cebolla, Champiñon, palmito, Pimenton</p>
+                            <h3 class="card-title">Salsa Original de Tomate</h3>
+                            <p class="card-text"></p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Primavera')">Agregar al carrito</button>
                         </div>
                     </div>
@@ -210,8 +210,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3 class="card-title">Pizza Gozzen</h3>
-                            <p class="card-text">Tomate, mozzarella, Pollo, Tocino, Choclo</p>
+                            <h3 class="card-title">Salsa de Tomate (Dulce)</h3>
+                            <p class="card-text"></p>
                             <button class="btn btn-danger" onclick="agregarCarrito('Pizza Gozzen')">Agregar al carrito</button>
                         </div>
                     </div>

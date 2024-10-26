@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicacion - PizzasGozzen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <header class="bg-danger text-white text-center py-4">
+        <h1 class="text-white">Pizza Gozzen</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'inicio' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'menu' %}">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'login' %}">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'ubicacion' %}">Ubicación</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section id="ubicacion" class="text-center">
+            <h2 class="mb-4">Nuestra Ubicación</h2>
+            <p>Estamos ubicados en el centro de la ciudad, cerca de la plaza principal. ¡Te esperamos!</p>
+            <iframe src="URL_DEL_MAPA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+</body>
+</html>
