@@ -71,3 +71,66 @@ button:hover {
     object-fit: cover;
   }
   
+  .carousel-control-prev,
+  .carousel-control-next {
+      background-color: transparent !important;
+      border: none !important;
+      width: auto;
+      padding: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      background-image: none; /* Quita el ícono por defecto */
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+  
+  /* Opción: agregar íconos personalizados con texto */
+  .carousel-control-prev::after,
+  .carousel-control-next::after {
+      content: '';
+  }
+  
+  .carousel-control-prev span,
+  .carousel-control-next span {
+      color: white;
+      font-weight: bold;
+  }
+  
+  .mi-carrusel {
+    max-height: 400px; /* Ajusta la altura total del carrusel */
+    overflow: hidden;  /* Oculta lo que se salga */
+}
+
+.mi-carrusel .carousel-item img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;  /* Esto recorta suavemente para mantener proporción */
+    object-position: center;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+}
+
+/* Este bloque elimina el fondo rojo al hacer hover o focus */
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Cambiar el color de las flechas si lo necesitás */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Hace las flechas blancas si están negras */
+}
+
+
+  
