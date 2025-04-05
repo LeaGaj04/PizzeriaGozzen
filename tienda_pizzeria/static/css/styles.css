@@ -65,3 +65,9 @@ button:hover {
     font-weight: bold;
     color: #D9534F; /* Rojo vibrante para la cantidad */
 }
+
+.img-carrusel {
+    height: 500px; /* ajusta según tu necesidad */
+    object-fit: cover;
+  }
+  
