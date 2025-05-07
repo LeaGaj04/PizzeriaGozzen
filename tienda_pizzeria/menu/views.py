@@ -11,3 +11,15 @@ def iniciar_sesion(request):
 
 def ubicacion(request):
     return render(request, 'ubicacion.html')
+
+def mapa_local(request):
+    return render(request, 'mapa.html')
+
+
+from rest_framework import viewsets
+from .models import Local
+from .serializers import LocalSerializer
+
+class LocalViewSet(viewsets.ReadOnlyModelViewSet):  # Solo lectura
+    queryset = Local.objects.all()
+    serializer_class = LocalSerializer
